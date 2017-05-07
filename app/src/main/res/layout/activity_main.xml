@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mhazi.coba1.MainActivity">
+    <ImageView
+        android:id="@+id/gambar1"
+        android:contentDescription="@string/cntDes1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/image1"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/profil"
+        android:contentDescription="@string/cntDes2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/textView"
+        android:src="@drawable/image2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="93dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gambar1"
+        android:text="@string/txt1"
+        style="@style/buttonStyle"/>
+
+    <TextView
+        android:id="@+id/share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:text="SHARE"
+        style="@style/buttonStyle"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_above="@+id/share">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/scrollcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/str1"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
